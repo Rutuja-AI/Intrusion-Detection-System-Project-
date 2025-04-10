@@ -1,0 +1,66 @@
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+        background-color: #0e1621;
+        color: #f5f6fa;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .sidebar .sidebar-content {
+        background: rgba(20, 20, 30, 0.75);
+        backdrop-filter: blur(10px);
+        border-right: 1px solid #1f2a38;
+        color: white;
+        box-shadow: 2px 0 15px rgba(0, 255, 255, 0.1);
+    }
+
+    [data-testid="stMetricDelta"] {
+        font-size: 1.2rem;
+        color: #00bcd4;
+    }
+
+    .big-font {
+        font-size: 28px !important;
+        font-weight: bold;
+        color: #00c6ff;
+        text-shadow: 0 0 6px #00c6ff;
+    }
+
+    h1, h2, h3 {
+        color: #00bcd4 !important;
+        text-shadow: 0 0 5px #00bcd4;
+    }
+
+    button {
+        background-color: #0072ff !important;
+        color: white !important;
+        border-radius: 12px !important;
+        border: none !important;
+        box-shadow: 0 0 12px #0072ff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #005fcc !important;
+        box-shadow: 0 0 16px #005fcc;
+        transform: scale(1.05);
+    }
+
+    footer {
+        visibility: hidden;
+    }
+/* 🚀 Make sidebar radio options big and bold */
+/* 🛡️ FORCE bigger, bolder sidebar radio buttons */
+section[data-testid="stSidebar"] div[data-baseweb="radio"] label > div:nth-child(2) {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+/* ✨ Glowing hover effect */
+section[data-testid="stSidebar"] div[data-baseweb="radio"] label:hover > div:nth-child(2) {
+    color: #00c6ff !important;
+    text-shadow: 0 0 8px #00c6ff;
+}
+
